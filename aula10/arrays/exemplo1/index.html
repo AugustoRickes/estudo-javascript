@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #color-panel {
+            width: 400px;
+            height: 400px;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="color-panel">
+
+    </div>
+    <button onclick="color(0)">azul</button>
+    <button onclick="color(1)">verde</button>
+    <button onclick="color(2)">vermelho</button>
+    <button onclick="color(3)">pink</button>
+
+    <script>
+        var cores = ["blue", "green", "red", "pink"];
+
+        function color(indexColor) {
+            const pcolor = document.getElementById("color-panel");
+            pcolor.style.backgroundColor = cores[indexColor];
+        }
+    </script>
+</body>
+
+</html>

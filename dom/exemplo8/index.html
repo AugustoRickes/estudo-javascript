@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos e DOM</title>
+    <style>
+        #mensagem {
+            box-sizing: border-box;
+            width: 200px;
+            height: 0;
+            position: absolute;
+            top: 0;
+            right: 50px;
+            background-color: rgb(255, 97, 97);
+            font: normal 25px Arial;
+            color: white;
+            padding: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mensagem">
+        preencha todos os campos!
+
+    </div>
+    <form>
+        <label>
+            nome:
+            <input type="text" name="nome">
+        </label>
+        <label><br><br>
+            senha:
+            <input type="password" name="senha">
+        </label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
